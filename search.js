@@ -195,7 +195,7 @@ function preview() {
             
 
 
-            display_content.innerHTML = `<i class="fa-solid fa-circle-arrow-left" style="color:yellow;color: yellow;font-size: 25px;margin: 10px 0px;" onclick="window.location.href='/search.html'"></i>
+            display_content.innerHTML = `<a href="/Movies-Hub.in/search.html"><i class="fa-solid fa-circle-arrow-left" style="color:yellow;color: yellow;font-size: 25px;margin: 10px 0px;"></i></a>
           <img src="https://image.tmdb.org/t/p/original${content.backdrop_path}" id="back_image" alt="">
             <div class="full_details_movie">
                 <h2 id="movie_title">${content.title}</h2>
