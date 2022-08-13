@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+#box2{
+    color: white;
+}
+#gif_image_mail{
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .mail_sent{
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 1px solid #00000038;
+    margin: 10px 0px;
+  }
+  
+  
+  .inputgroup , .mailinput , .textarea_input{
+    position: relative;
+    margin: 10px 0px;
+    color: white;
+  }
+  
+  .namelabel ,.mail_label ,.text_area_label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px,10px);
+    transform-origin: left;
+    transition: transform .25s;
+  }
+  #username , #mail , #message{
+  width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    outline: 2px solid  #4d7aff;
+
+  }
+  
+  .inputgroup:focus-within .namelabel{
+    transform:
+    translate(0,-20px) scale(.8);
+    color: black;
+    font-size: 15px;
+  }
+  
+  .mailinput:focus-within .mail_label{
+    transform:
+    translate(0,-20px) scale(.8);
+    color: black;
+    font-size: 15px;
+  }
+  
+  #message{
+    max-height: 5rem;
+    height: 96px;
+    width:100%;
+  }
+  
+  .textarea_input:focus-within .text_area_label{
+    transform:
+    translate(0,-20px) scale(.8);
+    color: black;
+    font-size: 15px;
+  }
+  #confirm_mail{
+    padding: 7px 85px;
+      border-radius: 13px;
+      background: rgba(119,89,249,1);
+      color: white;
+      font-weight: 600;
+      letter-spacing: 2px;
+       border: none;
+       display: flex;
+       margin: auto;
+  }
+  
+  .get_in_touch{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  .love{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Merriweather', serif;
+  }
+  .is-valid{
+    outline: 2px solid  #4d7aff;
+  }
+  .is-invalid{
+    outline: 2px solid  red;
+  }
+
+  
+.aftersumbit_box{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mail_thanks2{
+    min-height: 510px;
+      width: 86%;
+      background: #0c192c;
+      color: white;
+      margin: 5rem auto;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .mail_icon{
+    font-size: 100px;
+      margin: 10px 0px;
+      color: deeppink;
+  }
+  #submit_mail_para{
+    text-transform: capitalize;
+      letter-spacing: 1.8px;
+  }
+  #mail_submit_para_2{
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  #go_home{
+    padding: 8px 16px;
+    border-radius: 13px;
+    background: rgba(119,89,249,1);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+  }
+  #model_error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #error_img{
+    height: 100px;
+      width: 100px;
+  
+  }
+  #erroe_msg{
+    font-size: 26px;
+    text-transform: capitalize;
+    color: red;
+  }

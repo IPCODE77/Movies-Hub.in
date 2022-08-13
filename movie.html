@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movies Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-expand-lg" id="uppernavbar" style="background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+        <div class="container-fluid33">
+            <div class="nav_links">
+              <a class="navbar-brand" href="#"><span class="brandname">Movies</span><span class="brand">Hub</span>
+              </a>
+            </div>
+            <div class="other_livks">
+              <a class="navbar-brand active" id="search" href="search.html">Search</a>
+              <a class="navbar-brand" id="language" href="#">Language</a>
+              <a class="navbar-brand" id="search" href="prime.html">Prime</a>
+              <a class="navbar-brand" id="search" href="message.html">Contact</a>
+            </div>
+        </div>
+      </nav>
+      <div class="details" id="movie_preview_details">   
+      </div>
+      <div id="image_c"></div>
+  
+
+  <div class="main_container" id="main_container_box">
+    <div class="slider" id="main_content">
+    </div>
+    <div class="see_more">
+        <p class="category_para">Now Playing</p>
+        <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon"> </i> <i class="fa-solid fa-angle-up" id="up_arrow"></i></p>
+
+    </div>
+    <button id="now_playing_btn" hidden></button>
+    <div class="movie_category" id="category1">
+        <div class="inner_content" id="now_playing">
+        </div>
+    </div>  
+    <div id="details_icon_box">
+    </div>
+    <div class="see_more">
+        <p class="category_para">Top Rated</p>
+        <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon2"> </i> <i class="fa-solid fa-angle-up" id="up_arrow2"></i></p>
+
+    </div>
+    <button id="top_rate_btn" hidden></button>
+    <div class="movie_category2" id="category2">
+        <div class="inner_content2" id="top_rated">
+        </div>
+    </div>  
+
+    <div class="see_more">
+      <p class="category_para">UpComing Movies</p>
+      <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon3"> </i> <i class="fa-solid fa-angle-up" id="up_arrow3"></i></p>
+
+  </div>
+  <button id="up_coming_btn" hidden></button>
+  <div class="movie_category3" id="category3">
+      <div class="inner_content3" id="up_coming">
+      </div>
+  </div> 
+  <div class="see_more">
+    <p class="category_para">Documentary</p>
+    <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon4"> </i> <i class="fa-solid fa-angle-up" id="up_arrow4"></i></p>
+
+</div>
+<button id="Documentary_btn" hidden></button>
+<div class="movie_category4" id="category4">
+    <div class="inner_content4" id="Documentary">
+    </div>
+</div> 
+
+<div class="see_more">
+  <p class="category_para">Comedy</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon5"> </i> <i class="fa-solid fa-angle-up" id="up_arrow5"></i></p>
+
+</div>
+<button id="comedy_btn" hidden></button>
+<div class="movie_category5" id="category5">
+  <div class="inner_content5" id="comedy">
+  </div>
+</div> 
+<div class="see_more">
+  <p class="category_para">Action</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon6"> </i> <i class="fa-solid fa-angle-up" id="up_arrow6"></i></p>
+
+</div>
+<button id="Action_btn" hidden></button>
+<div class="movie_category6" id="category6">
+  <div class="inner_content6" id="Action">
+  </div>
+</div> 
+
+<div class="see_more">
+  <p class="category_para">Adventure</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon7"> </i> <i class="fa-solid fa-angle-up" id="up_arrow7"></i></p>
+
+</div>
+<button id="Adventure_btn" hidden></button>
+<div class="movie_category7" id="category7">
+  <div class="inner_content7" id="Adventure">
+  </div>
+</div> 
+<div class="see_more">
+  <p class="category_para">Crime</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon8"> </i> <i class="fa-solid fa-angle-up" id="up_arrow8"></i></p>
+
+</div>
+<button id="Crime_btn" hidden></button>
+<div class="movie_category8" id="category8">
+  <div class="inner_content8" id="Crime">
+  </div>
+</div> 
+
+<div class="see_more">
+  <p class="category_para">Horror</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon9"> </i> <i class="fa-solid fa-angle-up" id="up_arrow9"></i></p>
+
+</div>
+<button id="Horror_btn" hidden></button>
+<div class="movie_category9" id="category9">
+  <div class="inner_content9" id="Horror">
+  </div>
+</div> 
+<div class="see_more">
+  <p class="category_para">Romance</p>
+  <p class="category_para see_more_para" ><i class="fa-solid fa-angle-down" id="see_more_icon10"> </i> <i class="fa-solid fa-angle-up" id="up_arrow10"></i></p>
+
+</div>
+<button id="Romance_btn" hidden></button>
+<div class="movie_category10" id="category10">
+  <div class="inner_content10" id="Romance">
+  </div>
+</div> 
+  </div>
+
+ 
+  <footer class="footer_element" id="footer_element">
+    <a href="movie.html"><i class="fa-solid fa-house" style="color: yellow;"></i></a> 
+    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="prime.html"><i class="fa-solid fa-hand-holding-dollar"></i></a>
+    <a href="message.html"><i class="fa-solid fa-envelope-circle-check"></i></a>
+    <a href="#"><i class="fa-solid fa-bars-staggered" id="bars_icon"></i></a>
+
+ </footer>  
+
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id="model_btn" data-bs-toggle="modal" data-bs-target="#exampleModal" hidden>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Language</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body lan_box">
+        <div class="smile">
+          <i class="fa-solid fa-face-smile"></i>
+        </div>
+        <p class="lan_para">Now We only provies two language,more language coming soon..</p>
+        <div class="button_language">
+          <button type="button" class="btn btn-primary" id="eng_btn">English</button>
+          <button type="button" class="btn btn-primary" id="hindi_btn">Hindi</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="save" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <script src="movie.js"></script>
+    <script src="https://kit.fontawesome.com/8749e3864a.js" crossorigin="anonymous"></script>
+    <!-- <script src="preview.js"></script> -->
+
+</body>
+
+
+</html>

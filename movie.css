@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+body{
+  background: #0c192c;
+}
+.brand{
+  background: rgba(254,153,0,255);
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.brandname{
+  font-weight: 700;
+  color: white;
+}
+.navbar-brand{
+  font-family: 'PT Serif', serif;
+}
+.slider {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+.recentmovie {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.fade-in-image {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out-image {
+  animation: fadeOut 2s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container-fluid33{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 17px;
+}
+.navbar {
+  border-bottom: 1px solid #ffffff36;
+}
+.nav_links a,.other_livks a {
+  color: white;
+}
+.nav_links a:hover{
+  color: #4fc3dc;
+}
+.other_livks a:hover {
+  color: #4fc3dc;
+}
+.main_container {
+  padding-bottom: 50px;
+  background: #0c192c;
+}
+footer {
+  background: #0c192c;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: black;
+  display: none;
+}
+.footer_element a i{
+  color: white;
+}
+.fa-house,
+.fa-magnifying-glass,
+.fa-tv,
+.fa-hand-holding-dollar,
+.fa-envelope-circle-check {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer_element {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar {
+    display: none;
+  }
+  #main_content {
+    display: flex;
+  }
+  .ratings{
+    position: absolute;
+    right: 64px;
+  }
+ 
+  #now_playing,#top_rated,#up_coming,#Documentary,#comedy,#Action,#Adventure,#Crime,#Horror,#Romance,#search_result{
+    pointer-events: all;
+  }
+}
+
+.movie_category ,.movie_category2,.movie_category3,.movie_category4,.movie_category5,.movie_category6,.movie_category7,.movie_category8,.movie_category9,.movie_category10,.movie_category11{
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+  left: 0px;
+}
+.inner_content,.inner_content2,.inner_content3,.inner_content4,.inner_content5,.inner_content6,.inner_content7,.inner_content8,.inner_content9,.inner_content10,.inner_content11{
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  gap: 20px;
+  pointer-events: none;
+  transition: 0s ease-in;
+}
+.parmovie_categoryent:focus .inner_content {
+  pointer-events: auto;
+}
+.active_category {
+  height: "";
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+  left: 0px;
+}
+.active_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie_category::-webkit-scrollbar {
+  display: none;
+}
+.card-img-top {
+  height: 215px;
+}
+.card {
+  background: transparent;
+  color: white;
+  border: none;
+  margin: 0px 10px;
+  width: 18rem;
+  font-family: "Taviraj", serif;
+  text-transform: capitalize;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 10rem;
+    padding-bottom: 30px;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}.ratings{
+  text-align: center;
+  height: 20px;
+  width: 30px;
+  border-radius: 39%;
+  background: yellow;
+  color: black;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+  margin-top: 5;
+  position: absolute;
+}
+.see_more {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.fa-angle-right,
+.category_para {
+  padding: 5px 15px;
+  font-size: 20px;
+}
+.see_more_para {
+  color: #ffff00e3;
+  text-decoration: underline;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background:#0c192c;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #4fc3dc; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.activelinks{
+  color: yellow;
+}
+
+
+/* search */
+.input_box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 350px;
+  position: relative;
+}
+.searchbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.43s;
+  padding-bottom: 50px;
+}
+#pincode{
+  box-shadow: 0px 4px 4px rgb(94 94 94 / 14%) inset;
+  border-radius: 10px;
+  border: 1px solid #00000087;
+  padding: 5px 10px;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+.in_search{
+  height: 34px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  border-radius: 12px;
+  background-color: #149ddd;
+  color: #fffdfd;
+  font-size: 24px;
+  cursor: pointer;
+}
+.lds-roller {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 2rem;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00bcd4;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#error_msg{
+
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.lan_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lan_para{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+
+}
+.fa-face-smile{
+  font-size: 28px;
+  color: #f5e412;
+}
+.smile{
+  height: 26px;
+  width: 28px;
+  background: black;
+  border-radius: 50%;
+}
+
+/* preview */
+
+#back_image{
+  width: 100%;
+  height: 250px;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+#movie_title{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+#Total_time,#genres,#release_date{
+  color: white;
+  /* text-align: center; */
+  margin-top: 10px;
+  font-size: 18px;
+}
+#overview_text{
+  color: white;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: justify;
+  padding: 0px 10px;
+}
+#Characters,#Overview{
+  color: white;
+  margin-top: 10px;
+}
+
+#image_c{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.main_bvox p{
+  color: white;
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
