@@ -1,10 +1,9 @@
 # Movies-Hub.in 🎥🎥🍿🍿
-                        ![MinionsShhGIF](https://user-images.githubusercontent.com/89587666/184498993-a9131e14-8e99-4bfa-87dd-6bd17266fae7.gif)
-# Movies Hub - This is a movie website created by IPCODE77
-# Create by using Html,css,javascript,Bootstrap(library of html,css and javascript).
-# The Movies data collect from a free souce api from (TMDB ) website.
-# Data call from the rest api by usiing ajax GET call method.
-# call different types of Category data like 
+ Movies Hub - This is a movie website created by IPCODE77
+ Create by using Html,css,javascript,Bootstrap(library of html,css and javascript).
+ The Movies data collect from a free souce api from (TMDB ) website.
+ Data call from the rest api by usiing ajax GET call method.
+ call different types of Category data like 
   i>Now Playing movies
   ii>Top-Rated movies
   iii>Documentary Movies
@@ -12,7 +11,7 @@
   v>Adventure 
   vi>Horror
   vii>Romance  ... etc
- # User can able to see the movies all the movie details on which movie the user touch
+  User can able to see the movies all the movie details on which movie the user touch
   it shows 
   i>Poster of the movie
   ii>Tittle of the movie
@@ -20,7 +19,7 @@
   iv>Imdb ratings
   v>Description
   vi>All characters with picture
- # You can able to Any movie and seee the movie details.
+  You can able to Any movie and seee the movie details.
  
  # DESKTOP VIEW
  
