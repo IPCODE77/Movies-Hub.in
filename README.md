@@ -13,21 +13,32 @@
 
 
   i>Now Playing movies
+  
   ii>Top-Rated movies
+  
   iii>Documentary Movies
+  
   iv>Comedy
-  v>Adventure 
+  
+  v>Adventure
+  
   vi>Horror
+  
   vii>Romance  ... etc
   
  * User can able to see the movies all the movie details on which movie the user touch
   it shows
   
   i>Poster of the movie
+  
   ii>Tittle of the movie
+  
   iii>Total Time 
+  
   iv>Imdb ratings
+  
   v>Description
+  
   vi>All characters with picture
   
 *  You can able to  Any search movie and seee the movie details.
