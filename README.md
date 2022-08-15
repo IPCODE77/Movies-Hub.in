@@ -1,6 +1,7 @@
 # Movies-Hub.in 🎥🎥🍿🍿
  Movies Hub - This is a movie website created by IPCODE77
- Create by using Html,css,javascript,Bootstrap(library of html,css and javascript).
+ 
+ * Create by using Html,css,javascript,Bootstrap(library of html,css and javascript).
  The Movies data collect from a free souce api from (TMDB ) website.
  Data call from the rest api by usiing ajax GET call method.
  call different types of Category data like 
